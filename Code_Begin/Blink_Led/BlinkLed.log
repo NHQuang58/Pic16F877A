@@ -1,0 +1,16 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F887 -GC -DL -O11111114 -fo8 -N"D:\Hoc_PIC\Code_Begin\Blink_Led\BlinkLed.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Hoc_PIC\Code_Begin\Blink_Led\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "BlinkLed.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	BlinkLed.c
+hint: 16	1163	Variable 'i' has been declared, but not used	BlinkLed.c
+diagnostics: 91	123	Compiled Successfully	BlinkLed.c
+hint: 16	1164	Variable 'count' has been eliminated by optimizer	BlinkLed.c
+hint: 51	1164	Variable 'hangChuc' has been eliminated by optimizer	BlinkLed.c
+hint: 67	1164	Variable 'hangNghin' has been eliminated by optimizer	BlinkLed.c
+diagnostics: 0	127	All files Compiled in 62 ms	 
+hint: 0	1144	Used RAM (bytes): 2 (1%)  Free RAM (bytes): 350 (99%)	Used RAM (bytes): 2 (1%)  Free RAM (bytes): 350 (99%)
+hint: 0	1144	Used ROM (program words): 43 (1%)  Free ROM (program words): 8149 (99%)	Used ROM (program words): 43 (1%)  Free ROM (program words): 8149 (99%)
+diagnostics: 0	125	Project Linked Successfully	BlinkLed.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 157 ms	 
+diagnostics: 0	129	Project 'BlinkLed.mcppi' completed: 250 ms	 
+diagnostics: 0	103	Finished successfully: 13 Oct 2020, 16:40:58	BlinkLed.mcppi

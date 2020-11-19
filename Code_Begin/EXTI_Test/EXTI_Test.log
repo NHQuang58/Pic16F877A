@@ -1,0 +1,19 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -GC -DL -O11111114 -fo8 -N"D:\Hoc_PIC\Code_Begin\EXTI_Test\EXTI_Test.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Hoc_PIC\Code_Begin\EXTI_Test\" -SP"D:\Hoc_PIC\Code_Begin\LCD16x2_Test\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "main.c" "led7seg.c" "keyPad.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	led7seg.h
+diagnostics: 62	123	Compiled Successfully	main.c
+hint: 12	1164	Variable 'key' has been eliminated by optimizer	main.c
+diagnostics: 0	122	Compilation Started	led7seg.c
+diagnostics: 56	123	Compiled Successfully	led7seg.c
+hint: 16	1164	Variable 'hangChuc' has been eliminated by optimizer	led7seg.c
+hint: 32	1164	Variable 'hangNghin' has been eliminated by optimizer	led7seg.c
+diagnostics: 0	122	Compilation Started	keyPad.c
+diagnostics: 79	123	Compiled Successfully	keyPad.c
+diagnostics: 0	127	All files Compiled in 187 ms	 
+hint: 0	1144	Used RAM (bytes): 55 (16%)  Free RAM (bytes): 297 (84%)	Used RAM (bytes): 55 (16%)  Free RAM (bytes): 297 (84%)
+hint: 0	1144	Used ROM (program words): 631 (8%)  Free ROM (program words): 7561 (92%)	Used ROM (program words): 631 (8%)  Free ROM (program words): 7561 (92%)
+diagnostics: 0	125	Project Linked Successfully	EXTI_Test.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 110 ms	 
+diagnostics: 0	129	Project 'EXTI_Test.mcppi' completed: 329 ms	 
+diagnostics: 0	103	Finished successfully: 21 Jun 2020, 11:59:31	EXTI_Test.mcppi

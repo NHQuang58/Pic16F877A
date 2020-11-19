@@ -1,0 +1,2 @@
+main
+	IC74595_Minute0_7

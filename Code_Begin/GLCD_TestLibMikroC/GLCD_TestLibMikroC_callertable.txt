@@ -1,0 +1,23 @@
+main
+	__CC2DW
+		____DoICP
+	Glcd_Init
+		Strobe
+			Delay_10us
+	Glcd_Write_Text
+		Glcd_Write_Char
+			Mul_16X16_U
+			Glcd_Set_X
+				Strobe
+					Delay_10us
+			Glcd_Set_Page
+				Strobe
+					Delay_10us
+			Glcd_Set_Side
+			Glcd_Read_Data
+				Delay_1us
+				Delay_10us
+			____DoICP
+			Glcd_Write_Data
+				Strobe
+					Delay_10us

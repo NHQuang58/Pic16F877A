@@ -1,0 +1,18 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -GC -DL -O11111114 -fo20 -N"D:\Hoc_PIC\Code_Begin\LCD16x2_Test\LCD_Test.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Hoc_PIC\Code_Begin\LCD16x2_Test\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "LCD_Test.c" "keyPad4x4.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CString.mcl" "__Lib_Conversions.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	keypad4x4.h
+hint: 28	1163	Variable 'intStr' has been declared, but not used	LCD_Test.c
+hint: 28	1163	Variable 'floatStr' has been declared, but not used	LCD_Test.c
+diagnostics: 63	123	Compiled Successfully	LCD_Test.c
+hint: 25	1164	Variable 'intNumber' has been eliminated by optimizer	LCD_Test.c
+hint: 27	1164	Variable 'floatNumber' has been eliminated by optimizer	LCD_Test.c
+diagnostics: 0	122	Compilation Started	keyPad4x4.c
+diagnostics: 62	123	Compiled Successfully	keyPad4x4.c
+diagnostics: 0	127	All files Compiled in 188 ms	 
+hint: 0	1144	Used RAM (bytes): 7 (2%)  Free RAM (bytes): 345 (98%)	Used RAM (bytes): 7 (2%)  Free RAM (bytes): 345 (98%)
+hint: 0	1144	Used ROM (program words): 331 (4%)  Free ROM (program words): 7861 (96%)	Used ROM (program words): 331 (4%)  Free ROM (program words): 7861 (96%)
+diagnostics: 0	125	Project Linked Successfully	LCD_Test.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 125 ms	 
+diagnostics: 0	129	Project 'LCD_Test.mcppi' completed: 328 ms	 
+diagnostics: 0	103	Finished successfully: 11 Jun 2020, 10:25:42	LCD_Test.mcppi

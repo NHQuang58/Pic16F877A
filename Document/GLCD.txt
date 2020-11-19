@@ -1,0 +1,6 @@
+RS: 1 - data / 0 - instruction
+RW: 1 - read / 0 - write
+
+CS1 : CS2
+ 1  : 0   => left
+ 0  : 1   => right

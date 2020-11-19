@@ -1,0 +1,15 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -GC -DL -O11111114 -fo8 -N"D:\Hoc_PIC\Code_Begin\IC74595\IC75595.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Hoc_PIC\Code_Begin\IC74595\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "main.c" "ic74595_lib.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	ic74595_lib.h
+diagnostics: 37	123	Compiled Successfully	main.c
+hint: 11	1164	Variable 'i' has been eliminated by optimizer	main.c
+diagnostics: 0	122	Compilation Started	ic74595_lib.c
+diagnostics: 360	123	Compiled Successfully	ic74595_lib.c
+diagnostics: 0	127	All files Compiled in 844 ms	 
+hint: 0	1144	Used RAM (bytes): 3 (1%)  Free RAM (bytes): 349 (99%)	Used RAM (bytes): 3 (1%)  Free RAM (bytes): 349 (99%)
+hint: 0	1144	Used ROM (program words): 35 (1%)  Free ROM (program words): 8157 (99%)	Used ROM (program words): 35 (1%)  Free ROM (program words): 8157 (99%)
+diagnostics: 0	125	Project Linked Successfully	IC75595.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 797 ms	 
+diagnostics: 0	129	Project 'IC75595.mcppi' completed: 1672 ms	 
+diagnostics: 0	103	Finished successfully: 03 Sep 2020, 23:57:58	IC75595.mcppi

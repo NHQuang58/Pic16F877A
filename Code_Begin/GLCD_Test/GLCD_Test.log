@@ -1,0 +1,18 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -GC -DL -O11111114 -fo8 -N"D:\Hoc_PIC\Code_Begin\GLCD_Test\GLCD_Test.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Hoc_PIC\Code_Begin\GLCD_Test\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "main.c" "myGLCD.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_GlcdFonts.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+diagnostics: 123	123	Compiled Successfully	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	myglcd.h
+diagnostics: 25	123	Compiled Successfully	main.c
+hint: 6	1164	Variable 'i' has been eliminated by optimizer	main.c
+diagnostics: 0	122	Compilation Started	myGLCD.c
+diagnostics: 216	123	Compiled Successfully	myGLCD.c
+hint: 200	1164	Variable 'i' has been eliminated by optimizer	myGLCD.c
+diagnostics: 0	127	All files Compiled in 172 ms	 
+hint: 0	1144	Used RAM (bytes): 32 (9%)  Free RAM (bytes): 320 (91%)	Used RAM (bytes): 32 (9%)  Free RAM (bytes): 320 (91%)
+hint: 0	1144	Used ROM (program words): 2413 (29%)  Free ROM (program words): 5779 (71%)	Used ROM (program words): 2413 (29%)  Free ROM (program words): 5779 (71%)
+diagnostics: 0	125	Project Linked Successfully	GLCD_Test.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 172 ms	 
+diagnostics: 0	129	Project 'GLCD_Test.mcppi' completed: 484 ms	 
+diagnostics: 0	103	Finished successfully: 27 Aug 2020, 21:06:44	GLCD_Test.mcppi

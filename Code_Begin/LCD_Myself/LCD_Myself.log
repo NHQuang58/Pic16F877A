@@ -1,0 +1,16 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -GC -DL -O11111114 -fo20 -N"D:\Hoc_PIC\Code_Begin\LCD_Myself\LCD_Myself.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Hoc_PIC\Code_Begin\LCD_Myself\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "main.c" "lcd16x2lib.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_Sprinti.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+diagnostics: 123	123	Compiled Successfully	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	lcd16x2lib.h
+diagnostics: 24	123	Compiled Successfully	main.c
+diagnostics: 0	122	Compilation Started	lcd16x2lib.c
+diagnostics: 92	123	Compiled Successfully	lcd16x2lib.c
+diagnostics: 0	127	All files Compiled in 203 ms	 
+hint: 0	1144	Used RAM (bytes): 42 (12%)  Free RAM (bytes): 310 (88%)	Used RAM (bytes): 42 (12%)  Free RAM (bytes): 310 (88%)
+hint: 0	1144	Used ROM (program words): 2013 (25%)  Free ROM (program words): 6179 (75%)	Used ROM (program words): 2013 (25%)  Free ROM (program words): 6179 (75%)
+diagnostics: 0	125	Project Linked Successfully	LCD_Myself.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 359 ms	 
+diagnostics: 0	129	Project 'LCD_Myself.mcppi' completed: 719 ms	 
+diagnostics: 0	103	Finished successfully: 27 Aug 2020, 20:55:50	LCD_Myself.mcppi

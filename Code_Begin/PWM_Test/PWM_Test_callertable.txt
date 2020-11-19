@@ -1,0 +1,27 @@
+main
+	PWM_Initialaze
+		PR2_Value
+			Mul_32x32_FP
+				RES032
+				SETFOV32
+				SETFUN32
+			Div_32x32_FP
+				SETFDZ32
+				RES032
+				SETFOV32
+				SETFUN32
+			Sub_32x32_FP
+				Add_32x32_FP
+					NRM4032
+						RES032
+						SETFUN32
+						FIXSIGN32
+						SETFOV32
+					NRM3232
+						RES032
+						SETFUN32
+						FIXSIGN32
+					SETFOV32
+		double2byte
+			SETIOV3224
+	PWM_Duty

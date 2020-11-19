@@ -1,0 +1,16 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -GC -DL -O11111114 -fo8 -N"D:\Hoc_PIC\Code_Begin\Led7_Seg_TIM0\MyProject.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Hoc_PIC\Code_Begin\Led7_Seg_TIM0\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "led7_timer0.c" "main.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	led7_timer0.c
+diagnostics: 92	123	Compiled Successfully	led7_timer0.c
+hint: 52	1164	Variable 'hangChuc' has been eliminated by optimizer	led7_timer0.c
+hint: 68	1164	Variable 'hangNghin' has been eliminated by optimizer	led7_timer0.c
+diagnostics: 0	122	Compilation Started	led7_timer0.h
+diagnostics: 18	123	Compiled Successfully	main.c
+diagnostics: 0	127	All files Compiled in 156 ms	 
+hint: 0	1144	Used RAM (bytes): 20 (6%)  Free RAM (bytes): 332 (94%)	Used RAM (bytes): 20 (6%)  Free RAM (bytes): 332 (94%)
+hint: 0	1144	Used ROM (program words): 419 (5%)  Free ROM (program words): 7773 (95%)	Used ROM (program words): 419 (5%)  Free ROM (program words): 7773 (95%)
+diagnostics: 0	125	Project Linked Successfully	MyProject.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 109 ms	 
+diagnostics: 0	129	Project 'MyProject.mcppi' completed: 281 ms	 
+diagnostics: 0	103	Finished successfully: 29 Aug 2020, 16:26:03	MyProject.mcppi

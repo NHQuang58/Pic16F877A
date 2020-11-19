@@ -1,0 +1,50 @@
+UART Transmitter:
+- Thanh ghi dịch được gửi dữ liệu từ bộ đệm đọc/ ghi (TXREG)
+- Thanh ghi TSR không được tải cho đến khi Stop bit được truyền vào trước đó
+- Ngay khi Stop bit được truyền, TSR được load dữ liệu mới từ thanh ghi TXREG
+- Khi thanh ghi TXREG chuyển dữ liệu sang thanh ghi TSR (trong 1 chu kỳ), thanh ghi TXREG trống => flag bit TXIF (PIR<4>)
+được set lên mức 1 
+- Flag bit TXIF sẽ được set bất kể trang thái nào của TXIE và không thể bị clear bằng software
+- Flag bit TXIF chỉ bị reset khi data mới được load vào thanh ghi TXREG
+- Bit TRMT (TXSTA<1>) cho biết trạng thái thanh ghi TSR. Bit này là read-only bit, sẽ được set (1) khi thanh ghi TSR trống
+
+NOTE: 1. Thanh ghi TSR không được ánh xạ trong bộ nhớ dữ liệu nên không khả dụng cho user
+      2. Cờ TXIF sẽ được set khi enable bit TXEN, TXIF bị clear khi load lên TXREG
+
+- Thông thường, khi việc truyền bắt đầu, thanh ghi TSR sẽ trống, tại thời điểm đó, việc truyền đến thanh ghi TXREG sẽ dẫn
+đến trền ngay lập tức sang TSR, dẫn đến TXREG trống. Do đó có thể truyền back-to-back
+- Trong chế độ truyền 9bit, bit truyền TX9 (TXSTA<6>) phải được được set và 9th bit phải được viết lên TX9D bit (TXSTA<0>).
+Bit 9th phải được truyền trước khi truyền 8bit data vào TXREG. Bởi vì 1 data viết lên TXREG có thể dẫn đến bị truyền ngay
+sang TSR (nếu TSR trống)
+
+
+UART Receive:
+- Khối nhận dữ liệu là 1 bộ dịch chuyển highspeed, hđ ở baudrate x16; trong khi đó bộ dịch chuyển nhận dữ liệu chính hđ 
+ở baudrate hoặc Fosc
+- "Heart" của người nhận là Thanh ghi dịch chuyển nhận (nối tiếp) (RSR). Sau khi nhận bit stop, 
+dữ liệu nhận được trong RSR được chuyển đến thanh ghi RCREG (nếu nó trốnsg) 
+- Nếu quá trình chuyền hoàn tất, cờ bit RCIF(PIR<5>) được set (1). Ngắt thực tế có thể dis/enable bởi config RCIE(PIE1<5>) 
+- Flag bit RCIF là bit read-only, chỉ bị clear bởi hardware. (Bị clear khi thanh ghi RCREG trống)
+- Khi phát hiện bit Stop của byte 3rd, nếu thanh ghi RCREG vẫn đầy, bit báo lỗi (OERR-RCSTA<1>) => 1),dữ liệu trong RSR mất
+- Thanh ghi RCREG có thể được đọc 2 lần để lấy 2 byte, lỗi trang OERR phải được clear bằng software. Điều này được thực
+hiện bằng cách đặt lại logic nhận(CREN cleared  và được set lại).
+- Nếu bit OERR được set, việc chuyển từ thanh ghi RSR sang thanh ghi RCREG bị nghẽn và không nhận thêm data nữa
+- Bit Framing error, FERR (RCSTA<2>) được đặt nếu Stop bit được nhận trống. Bit FERR và bit 9th được đệm như dữ liệu nhận
+Bộ đọc RCREG sẽ load bit RX9D và FERR với các giá trị mới, do đó cần phải đọc thanh ghi RCSTA trước khi đọc thanh ghi
+ RCREG để ko bị mất thông tin FERR và RX9D cũ.
+
+TXREG không rỗng => TXIF = 0 //chưa truyền xong
+RCREG trống => RCIF = 0 //chưa nhận xong
+OERR_bit == 1 => phải Reset CREN_bit
+
+Để truyền dữ liệu:
+1. Khởi tạo thanh ghi SPBRG để thiết lập Baudrate
+2. Enable UART: clear bit SYNC và set bit SPEN
+3. Nếu sử dụng ngắt, enable bit TXIE
+4. Nếu sử dụng chế độ truyền 9bit, set bit TX9
+5. Enable quá trình truyền bằng cách set bit TXEN, điều này cũng sẽ set bit TXIF
+6. Nếu truyền 9bit thì bit 9th phải được load vào bit TX9D
+7. Load data vào thanh ghi TXREG
+8. Nếu dùng ngắt thì phải enable bit GIE và PEIE
+
+

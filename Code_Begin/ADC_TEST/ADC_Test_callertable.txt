@@ -1,0 +1,26 @@
+main
+	ADC_Init
+	ADC_ReadChannel
+	word2double
+		NRM3232
+			RES032
+			SETFUN32
+			FIXSIGN32
+	Mul_32x32_FP
+		RES032
+		SETFOV32
+		SETFUN32
+	Div_32x32_FP
+		SETFDZ32
+		RES032
+		SETFOV32
+		SETFUN32
+	double2int
+		SETIOV3224
+	Led7_Quartet
+		Div_16x16_S
+			Div_16x16_S_L
+		Hien_Thi_ChuSo
+			____DoICP
+		Hien_Thi_DP
+			____DoICP

@@ -1,0 +1,14 @@
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -GC -DL -O11111114 -fo8 -N"D:\Hoc_PIC\Code_Begin\BlueTooth_HC06\BlueTooth_HC06.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"D:\Hoc_PIC\Code_Begin\BlueTooth_HC06\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "main.c" "blueTooth.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl"	 
+hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
+diagnostics: 0	122	Compilation Started	bluetooth.h
+diagnostics: 54	123	Compiled Successfully	main.c
+diagnostics: 0	122	Compilation Started	blueTooth.c
+diagnostics: 67	123	Compiled Successfully	blueTooth.c
+diagnostics: 0	127	All files Compiled in 109 ms	 
+hint: 0	1144	Used RAM (bytes): 124 (35%)  Free RAM (bytes): 228 (65%)	Used RAM (bytes): 124 (35%)  Free RAM (bytes): 228 (65%)
+hint: 0	1144	Used ROM (program words): 347 (4%)  Free ROM (program words): 7845 (96%)	Used ROM (program words): 347 (4%)  Free ROM (program words): 7845 (96%)
+diagnostics: 0	125	Project Linked Successfully	BlueTooth_HC06.mcppi
+hint: 0	1004	COFF file successfully generated	COFF file successfully generated
+diagnostics: 0	128	Linked in 110 ms	 
+diagnostics: 0	129	Project 'BlueTooth_HC06.mcppi' completed: 235 ms	 
+diagnostics: 0	103	Finished successfully: 28 Aug 2020, 17:06:28	BlueTooth_HC06.mcppi

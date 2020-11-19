@@ -1,0 +1,11 @@
+main
+	__CC2DW
+		____DoICP
+	UART_Init
+		Div_32x32_S
+			SDIV3232L
+			COMFREM
+	UART_Write
+		UART_SendByte
+	UART_ReceiveByte
+	UART_SendByte

@@ -1,0 +1,25 @@
+/****************Lý thuyết*********************/
+
+**Start Condition khi Master bắt đầu 1 giao dịch: 
+ - Nó sẽ chuyển mạch SDA từ 1 xuống 0
+ - Sau đó kéo SCL từ 1 xuống 0
+=> Khi Start Condition được gửi từ Master, all các Slave đều hđ ngay cả khi ở sleep mode
+
+**Khối địa chỉ: bao gồm 7bit chứa địa chỉ của Slave
+
+**Bit R/W: Master muốn gửi  = 0
+	   Master muốn nhận = 1
+
+**Bit ACK/NACK: 
+	- Address của Slave nào trùng với address Master phát thì bit = 0
+	- Ngược lại thì bit vẫn = 1 (default)
+
+**Block Data (8bit):
+	- Được thiết lập bởi bên gửi với các data cần truyền
+	- Được theo sau bởi 1 bit ACK/NACK 
+					+, Nhận thành công => bit = 0
+					+, Nhận ko thành công => bit = 1
+
+**Stop Condition: Sau khi khung data truyền xong qua SDA
+	- Master kéo SDA từ 0 lên 1
+	- Sau đó hạ SCL từ 1 về 0
